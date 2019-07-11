@@ -20,9 +20,26 @@ Or install it yourself as:
 
 ## Usage
 
+Integrate [incoming webhooks](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) into your workspace.
+
 ```ruby
-slack_hook = SlackHook::Incoming.new("https://hooks.slack.com/services/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")
+slack_hook = SlackHook::Incoming.new("HOOK_URL")
+
+payload={"text": "A very important thing has occurred! <https://alert-system.com/alerts/1234|Click here> for details!"}
+
+slack_hook.post(payload)
+
+#<Net::HTTPOK 200 OK readbody=true>
 ```
+
+## Message formatting (payload)
+
+Slaсk currently provides two ways to format messages:
+
+1. [Message attachments](https://api.slack.com/docs/outmoded-messaging) (outmoded)
+2. [Block Kit](https://api.slack.com/block-kit)
+
+`SlackHook` support both approaches.
 
 ## Development
 
