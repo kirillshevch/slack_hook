@@ -1,7 +1,6 @@
 # SlackHook
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/slack_hook`. To experiment with that code, run `bin/console` for an interactive prompt.
-
+A Simple Interface to Slack Incoming Webhooks Integrations
 
 ## Installation
 
@@ -21,6 +20,27 @@ Or install it yourself as:
 
 ## Usage
 
+Integrate [incoming webhooks](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks) into your workspace.
+
+```ruby
+slack_hook = SlackHook::Incoming.new("HOOK_URL")
+
+payload={"text": "A very important thing has occurred! <https://alert-system.com/alerts/1234|Click here> for details!"}
+
+slack_hook.post(payload)
+#<Net::HTTPOK 200 OK readbody=true>
+```
+
+# <img src='https://github.com/kirillshevch/slack_hook/blob/feature/slack-hook/example.jpg' alt='Incoming Hook Example' />
+
+## Message formatting (payload)
+
+Slaсk currently provides two ways to format messages:
+
+1. [Message attachments](https://api.slack.com/docs/outmoded-messaging) (outmoded)
+2. [Block Kit](https://api.slack.com/block-kit)
+
+`SlackHook` support both approaches.
 
 ## Development
 
@@ -30,7 +50,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/kirillweb/slack_hook.
+Bug reports and pull requests are welcome on GitHub at https://github.com/kirillshevch/slack_hook.
 
 ## License
 
