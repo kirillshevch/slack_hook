@@ -31,7 +31,7 @@ slack_hook.post(payload)
 #<Net::HTTPOK 200 OK readbody=true>
 ```
 
-# <img src='https://github.com/kirillshevch/slack_hook/blob/feature/slack-hook/example.jpg' alt='Incoming Hook Example' />
+# <img src='https://github.com/kirillshevch/slack_hook/blob/master/example.jpg' alt='Incoming Hook Example' />
 
 ## Message formatting (payload)
 
