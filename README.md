@@ -1,5 +1,9 @@
 # SlackHook
 
+[![Gem Version](https://badge.fury.io/rb/slack_hook.svg)](https://badge.fury.io/rb/slack_hook)
+[![CircleCI](https://circleci.com/gh/kirillshevch/slack_hook.svg?style=svg)](https://circleci.com/gh/kirillshevch/slack_hook)
+
+
 A Simple Interface to Slack Incoming Webhooks Integrations
 
 ## Installation
