@@ -28,9 +28,10 @@ slack_hook = SlackHook::Incoming.new("HOOK_URL")
 payload={"text": "A very important thing has occurred! <https://alert-system.com/alerts/1234|Click here> for details!"}
 
 slack_hook.post(payload)
-
 #<Net::HTTPOK 200 OK readbody=true>
 ```
+
+# <img src='https://github.com/kirillshevch/slack_hook/blob/feature/slack-hook/example.jpg' alt='Incoming Hook Example' />
 
 ## Message formatting (payload)
 
