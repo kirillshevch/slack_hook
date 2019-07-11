@@ -1,7 +1,6 @@
 # SlackHook
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/slack_hook`. To experiment with that code, run `bin/console` for an interactive prompt.
-
+A Simple Interface to Slack Incoming Webhooks Integrations
 
 ## Installation
 
@@ -21,6 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
+```ruby
+slack_hook = SlackHook::Incoming.new("https://hooks.slack.com/services/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")
+```
 
 ## Development
 
@@ -30,7 +32,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/kirillweb/slack_hook.
+Bug reports and pull requests are welcome on GitHub at https://github.com/kirillshevch/slack_hook.
 
 ## License
 

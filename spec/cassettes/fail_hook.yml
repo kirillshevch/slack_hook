@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://hooks.slack.com/services/TC30EGPDJ/BL2BH3J8H/I4Ho2M2kCjrG8sRwNHHthVT
+    body:
+      encoding: US-ASCII
+      string: payload=%7B%7D
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 11 Jul 2019 05:57:58 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-ovty
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 5f0256b858eb482d76fb1e14a1b7a667.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - WAW50-C1
+      X-Amz-Cf-Id:
+      - EOR0_PtKn5pAIeUmDv_sWNV9Jj7sJg13LOZOU4W6kygovzJA3l5yjA==
+    body:
+      encoding: UTF-8
+      string: invalid_payload
+    http_version: 
+  recorded_at: Thu, 11 Jul 2019 05:57:58 GMT
+recorded_with: VCR 3.0.3
