@@ -47,7 +47,7 @@ Slaсk currently provides two ways to format messages:
 `SlackHook` support both approaches.
 
 1. `{ text: 'hook text', attachments: []}`
-1. `{ text: 'hook text', blocks: []}`
+1. `{ blocks: [] }`
 
 ## Development
 
